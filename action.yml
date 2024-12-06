@@ -1,0 +1,12 @@
+# action.yml
+name: 'Simple Node.js Action'
+description: 'A simple action to run a Node.js script that performs an operation'
+inputs:
+  log-message:
+    description: 'The message to log'
+    required: true
+    default: 'Hello, world!'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
